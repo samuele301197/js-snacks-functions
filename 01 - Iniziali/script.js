@@ -6,9 +6,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 function getInitials(nomi) {
-    return nomi.map(name => {
+    return nomi.map(name => {           // map è un metodo degli array in JavaScript che serve per trasformare ogni elemento dell’array.
+
       return name
-        .split(' ')                   // Divide il nome completo in parole
+      .split(' ')                   // Divide il nome completo in parole
         .map(word => word[0].toUpperCase()) // Prende la prima lettera di ogni parola e la mette in maiuscolo
         .join('');                    // Unisce le iniziali
     });
@@ -20,7 +21,8 @@ function getInitials(nomi) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(iniziali);
+// console.log(iniziali);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
